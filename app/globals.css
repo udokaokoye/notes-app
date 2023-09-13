@@ -17,11 +17,46 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+background-color: #1F2125;
+color: #d8d8d8;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  height: 90%;
+  width: 40%;
+  background: #32353b;
+}
+
+.mainContainer .header {
+  width: 100%;
+  height: auto;
+  background-color: #282A2C;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mainContainer .subHeader {
+  width: 100%;
+  height: auto;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.note {
+ width: 100%;
+ height: auto;
+ border-bottom: 1px solid #cccccc26;
+ cursor: pointer;
+
+
+}
+
+.note:hover {
+  background-color: #151619;
 }
