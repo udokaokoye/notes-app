@@ -27,9 +27,34 @@ align-items: center;
 
 .mainContainer {
   margin: 0 auto;
-  height: 90%;
+  max-height: 100vh;
   width: 40%;
   background: #32353b;
+}
+
+.containerWrapper {
+  /* position: relative; */
+  height: 100%;
+}
+
+.floatingAddBtn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: lighter;
+  background: #ea6937;
+  cursor: pointer;
+margin: 15px 0px;
+margin-left: auto;
+margin-right: 20px;
+}
+
+.floatingAddBtn:hover {
+  background-color: #e35720;
 }
 
 .mainContainer .header {
@@ -42,10 +67,12 @@ align-items: center;
 
 .mainContainer .subHeader {
   width: 100%;
-  height: auto;
+  height: 20px;
 display: flex;
 justify-content: space-between;
-margin-bottom: 20px;
+/* margin-bottom: 20px; */
+font-weight: bold;
+color: #ea6937;
 }
 
 .note {
@@ -53,10 +80,41 @@ margin-bottom: 20px;
  height: auto;
  border-bottom: 1px solid #cccccc26;
  cursor: pointer;
+}
 
+.noteTitle {
+  font-size: 18px;
+}
 
+.noteDetail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.noteContent {
+  white-space: nowrap;     /* Prevent text from wrapping to the next line */
+  overflow: hidden;        /* Hide any overflowing content */
+  text-overflow: ellipsis; /* Display an ellipsis (...) when the text overflows */
+  width: 100%;            /* Set a specific width for the container (adjust as needed) */
+  /* border: 1px solid #ccc; */
 }
 
 .note:hover {
   background-color: #151619;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 300px;
+  font-size: 15px;
+  background-color: transparent;
+  /* padding: 5px; */
+  resize: none;
+}
+
+.textarea:focus {
+  outline: none;
 }
